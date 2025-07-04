@@ -12,26 +12,28 @@
         <meta name="author" content="NodeBook Team">
       
       
-        <link rel="canonical" href="https://nodebook.github.io/">
+        <link rel="canonical" href="https://nodebook.github.io/users/cnl-syntax/">
       
       
+        <link rel="prev" href="../user-guide/">
       
-        <link rel="next" href="users/">
+      
+        <link rel="next" href="../../api/core/models/">
       
       
-      <link rel="icon" href="assets/images/favicon.png">
+      <link rel="icon" href="../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.14">
     
     
       
-        <title>NodeBook Backend Documentation</title>
+        <title>CNL Syntax - NodeBook Backend Documentation</title>
       
     
     
-      <link rel="stylesheet" href="assets/stylesheets/main.342714a4.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.342714a4.min.css">
       
         
-        <link rel="stylesheet" href="assets/stylesheets/palette.06af60db.min.css">
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
       
       
 
@@ -50,11 +52,11 @@
       
     
     
-      <link rel="stylesheet" href="assets/_mkdocstrings.css">
+      <link rel="stylesheet" href="../../assets/_mkdocstrings.css">
     
-      <link rel="stylesheet" href="stylesheets/extra.css">
+      <link rel="stylesheet" href="../../stylesheets/extra.css">
     
-    <script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -80,7 +82,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#node-book-backend-documentation" class="md-skip">
+        <a href="#cnl-syntax-guide" class="md-skip">
           Skip to content
         </a>
       
@@ -94,7 +96,7 @@
 
 <header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="." title="NodeBook Backend Documentation" class="md-header__button md-logo" aria-label="NodeBook Backend Documentation" data-md-component="logo">
+    <a href="../.." title="NodeBook Backend Documentation" class="md-header__button md-logo" aria-label="NodeBook Backend Documentation" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -114,7 +116,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Home
+              CNL Syntax
             
           </span>
         </div>
@@ -225,11 +227,9 @@
   
   
   
-    
   
-  
-    <li class="md-tabs__item md-tabs__item--active">
-      <a href="." class="md-tabs__link">
+    <li class="md-tabs__item">
+      <a href="../.." class="md-tabs__link">
         
   
   
@@ -246,11 +246,13 @@
   
   
   
+    
+  
   
     
     
-      <li class="md-tabs__item">
-        <a href="users/" class="md-tabs__link">
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../" class="md-tabs__link">
           
   
   
@@ -277,7 +279,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="api/core/models/" class="md-tabs__link">
+        <a href="../../api/core/models/" class="md-tabs__link">
           
   
   
@@ -300,7 +302,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="development/installation/" class="md-tabs__link">
+        <a href="../../development/installation/" class="md-tabs__link">
           
   
   
@@ -334,7 +336,7 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="." title="NodeBook Backend Documentation" class="md-nav__button md-logo" aria-label="NodeBook Backend Documentation" data-md-component="logo">
+    <a href="../.." title="NodeBook Backend Documentation" class="md-nav__button md-logo" aria-label="NodeBook Backend Documentation" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -361,32 +363,10 @@
       
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    Home
-    
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="." class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
         
   
   
@@ -397,194 +377,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#quick-start" class="md-nav__link">
-    <span class="md-ellipsis">
-      🚀 Quick Start
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="🚀 Quick Start">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#key-features" class="md-nav__link">
-    <span class="md-ellipsis">
-      Key Features
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#documentation-sections" class="md-nav__link">
-    <span class="md-ellipsis">
-      📚 Documentation Sections
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="📚 Documentation Sections">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#nodebook-users" class="md-nav__link">
-    <span class="md-ellipsis">
-      NodeBook Users
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#api-reference" class="md-nav__link">
-    <span class="md-ellipsis">
-      API Reference
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#development" class="md-nav__link">
-    <span class="md-ellipsis">
-      Development
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#getting-started" class="md-nav__link">
-    <span class="md-ellipsis">
-      🔧 Getting Started
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="🔧 Getting Started">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#prerequisites" class="md-nav__link">
-    <span class="md-ellipsis">
-      Prerequisites
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#installation" class="md-nav__link">
-    <span class="md-ellipsis">
-      Installation
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#api-access" class="md-nav__link">
-    <span class="md-ellipsis">
-      API Access
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#architecture-overview" class="md-nav__link">
-    <span class="md-ellipsis">
-      🏗️ Architecture Overview
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#api-examples" class="md-nav__link">
-    <span class="md-ellipsis">
-      📖 API Examples
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="📖 API Examples">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#creating-a-graph" class="md-nav__link">
-    <span class="md-ellipsis">
-      Creating a Graph
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#parsing-cnl" class="md-nav__link">
-    <span class="md-ellipsis">
-      Parsing CNL
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#contributing" class="md-nav__link">
-    <span class="md-ellipsis">
-      🤝 Contributing
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#license" class="md-nav__link">
-    <span class="md-ellipsis">
-      📄 License
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -593,28 +385,31 @@
       
   
   
+    
   
   
+  
     
     
     
     
+      
+        
+        
       
       
         
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
         
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
         
           
-        
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2" >
-        
-          
-          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
             
   
   
@@ -627,7 +422,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_2">
             <span class="md-nav__icon md-icon"></span>
             NodeBook Users
@@ -641,7 +436,7 @@
   
   
     <li class="md-nav__item">
-      <a href="users/" class="md-nav__link">
+      <a href="../" class="md-nav__link">
         
   
   
@@ -664,7 +459,7 @@
   
   
     <li class="md-nav__item">
-      <a href="users/difficulty-levels/" class="md-nav__link">
+      <a href="../difficulty-levels/" class="md-nav__link">
         
   
   
@@ -687,7 +482,7 @@
   
   
     <li class="md-nav__item">
-      <a href="users/user-guide/" class="md-nav__link">
+      <a href="../user-guide/" class="md-nav__link">
         
   
   
@@ -707,10 +502,32 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="users/cnl-syntax/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    CNL Syntax
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -721,6 +538,317 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#what-is-cnl" class="md-nav__link">
+    <span class="md-ellipsis">
+      What is CNL?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#basic-syntax-elements" class="md-nav__link">
+    <span class="md-ellipsis">
+      Basic Syntax Elements
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Basic Syntax Elements">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#relations" class="md-nav__link">
+    <span class="md-ellipsis">
+      Relations
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#attributes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Attributes
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#adverbs-advancedexpert-levels" class="md-nav__link">
+    <span class="md-ellipsis">
+      Adverbs (Advanced/Expert Levels)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#quantifiers-advancedexpert-levels" class="md-nav__link">
+    <span class="md-ellipsis">
+      Quantifiers (Advanced/Expert Levels)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#modality-expert-level-only" class="md-nav__link">
+    <span class="md-ellipsis">
+      Modality (Expert Level Only)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#complex-structures" class="md-nav__link">
+    <span class="md-ellipsis">
+      Complex Structures
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Complex Structures">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#multiple-relations" class="md-nav__link">
+    <span class="md-ellipsis">
+      Multiple Relations
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#nested-structures" class="md-nav__link">
+    <span class="md-ellipsis">
+      Nested Structures
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#conditional-statements" class="md-nav__link">
+    <span class="md-ellipsis">
+      Conditional Statements
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#difficulty-level-examples" class="md-nav__link">
+    <span class="md-ellipsis">
+      Difficulty Level Examples
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Difficulty Level Examples">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#easy-level" class="md-nav__link">
+    <span class="md-ellipsis">
+      Easy Level
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#moderate-level" class="md-nav__link">
+    <span class="md-ellipsis">
+      Moderate Level
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#advanced-level" class="md-nav__link">
+    <span class="md-ellipsis">
+      Advanced Level
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#expert-level" class="md-nav__link">
+    <span class="md-ellipsis">
+      Expert Level
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#best-practices" class="md-nav__link">
+    <span class="md-ellipsis">
+      Best Practices
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Best Practices">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#clarity" class="md-nav__link">
+    <span class="md-ellipsis">
+      Clarity
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#consistency" class="md-nav__link">
+    <span class="md-ellipsis">
+      Consistency
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#completeness" class="md-nav__link">
+    <span class="md-ellipsis">
+      Completeness
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#accuracy" class="md-nav__link">
+    <span class="md-ellipsis">
+      Accuracy
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#common-patterns" class="md-nav__link">
+    <span class="md-ellipsis">
+      Common Patterns
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Common Patterns">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#part-whole-relationships" class="md-nav__link">
+    <span class="md-ellipsis">
+      Part-Whole Relationships
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cause-effect-relationships" class="md-nav__link">
+    <span class="md-ellipsis">
+      Cause-Effect Relationships
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#property-relationships" class="md-nav__link">
+    <span class="md-ellipsis">
+      Property Relationships
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#process-relationships" class="md-nav__link">
+    <span class="md-ellipsis">
+      Process Relationships
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tips-for-writing-cnl" class="md-nav__link">
+    <span class="md-ellipsis">
+      Tips for Writing CNL
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#common-mistakes-to-avoid" class="md-nav__link">
+    <span class="md-ellipsis">
+      Common Mistakes to Avoid
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#getting-help-with-cnl" class="md-nav__link">
+    <span class="md-ellipsis">
+      Getting Help with CNL
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -830,7 +958,7 @@
   
   
     <li class="md-nav__item">
-      <a href="api/core/models/" class="md-nav__link">
+      <a href="../../api/core/models/" class="md-nav__link">
         
   
   
@@ -853,7 +981,7 @@
   
   
     <li class="md-nav__item">
-      <a href="api/core/utils/" class="md-nav__link">
+      <a href="../../api/core/utils/" class="md-nav__link">
         
   
   
@@ -876,7 +1004,7 @@
   
   
     <li class="md-nav__item">
-      <a href="api/core/registry/" class="md-nav__link">
+      <a href="../../api/core/registry/" class="md-nav__link">
         
   
   
@@ -952,7 +1080,7 @@
   
   
     <li class="md-nav__item">
-      <a href="api/core/schema_ops/" class="md-nav__link">
+      <a href="../../api/core/schema_ops/" class="md-nav__link">
         
   
   
@@ -975,7 +1103,7 @@
   
   
     <li class="md-nav__item">
-      <a href="api/core/schema_utils/" class="md-nav__link">
+      <a href="../../api/core/schema_utils/" class="md-nav__link">
         
   
   
@@ -998,7 +1126,7 @@
   
   
     <li class="md-nav__item">
-      <a href="api/routes/schema_routes/" class="md-nav__link">
+      <a href="../../api/routes/schema_routes/" class="md-nav__link">
         
   
   
@@ -1074,7 +1202,7 @@
   
   
     <li class="md-nav__item">
-      <a href="api/core/node_utils/" class="md-nav__link">
+      <a href="../../api/core/node_utils/" class="md-nav__link">
         
   
   
@@ -1097,7 +1225,7 @@
   
   
     <li class="md-nav__item">
-      <a href="api/routes/nodes/" class="md-nav__link">
+      <a href="../../api/routes/nodes/" class="md-nav__link">
         
   
   
@@ -1120,7 +1248,7 @@
   
   
     <li class="md-nav__item">
-      <a href="api/routes/ndf_routes/" class="md-nav__link">
+      <a href="../../api/routes/ndf_routes/" class="md-nav__link">
         
   
   
@@ -1143,7 +1271,7 @@
   
   
     <li class="md-nav__item">
-      <a href="api/routes/parse_pipeline/" class="md-nav__link">
+      <a href="../../api/routes/parse_pipeline/" class="md-nav__link">
         
   
   
@@ -1219,7 +1347,7 @@
   
   
     <li class="md-nav__item">
-      <a href="api/routes/graph_ops/" class="md-nav__link">
+      <a href="../../api/routes/graph_ops/" class="md-nav__link">
         
   
   
@@ -1242,7 +1370,7 @@
   
   
     <li class="md-nav__item">
-      <a href="api/routes/graphs/" class="md-nav__link">
+      <a href="../../api/routes/graphs/" class="md-nav__link">
         
   
   
@@ -1265,7 +1393,7 @@
   
   
     <li class="md-nav__item">
-      <a href="api/routes/graph/" class="md-nav__link">
+      <a href="../../api/routes/graph/" class="md-nav__link">
         
   
   
@@ -1288,7 +1416,7 @@
   
   
     <li class="md-nav__item">
-      <a href="api/routes/transitions/" class="md-nav__link">
+      <a href="../../api/routes/transitions/" class="md-nav__link">
         
   
   
@@ -1364,7 +1492,7 @@
   
   
     <li class="md-nav__item">
-      <a href="api/core/atomic_ops/" class="md-nav__link">
+      <a href="../../api/core/atomic_ops/" class="md-nav__link">
         
   
   
@@ -1387,7 +1515,7 @@
   
   
     <li class="md-nav__item">
-      <a href="api/routes/atomic_routes/" class="md-nav__link">
+      <a href="../../api/routes/atomic_routes/" class="md-nav__link">
         
   
   
@@ -1410,7 +1538,7 @@
   
   
     <li class="md-nav__item">
-      <a href="api/routes/users/" class="md-nav__link">
+      <a href="../../api/routes/users/" class="md-nav__link">
         
   
   
@@ -1433,7 +1561,7 @@
   
   
     <li class="md-nav__item">
-      <a href="api/routes/functions/" class="md-nav__link">
+      <a href="../../api/routes/functions/" class="md-nav__link">
         
   
   
@@ -1456,7 +1584,7 @@
   
   
     <li class="md-nav__item">
-      <a href="api/routes/preferences/" class="md-nav__link">
+      <a href="../../api/routes/preferences/" class="md-nav__link">
         
   
   
@@ -1479,7 +1607,7 @@
   
   
     <li class="md-nav__item">
-      <a href="api/routes/logging/" class="md-nav__link">
+      <a href="../../api/routes/logging/" class="md-nav__link">
         
   
   
@@ -1555,7 +1683,7 @@
   
   
     <li class="md-nav__item">
-      <a href="api/external/auth/" class="md-nav__link">
+      <a href="../../api/external/auth/" class="md-nav__link">
         
   
   
@@ -1578,7 +1706,7 @@
   
   
     <li class="md-nav__item">
-      <a href="api/external/nlp/" class="md-nav__link">
+      <a href="../../api/external/nlp/" class="md-nav__link">
         
   
   
@@ -1601,7 +1729,7 @@
   
   
     <li class="md-nav__item">
-      <a href="api/external/llm/" class="md-nav__link">
+      <a href="../../api/external/llm/" class="md-nav__link">
         
   
   
@@ -1624,7 +1752,7 @@
   
   
     <li class="md-nav__item">
-      <a href="api/external/docs/" class="md-nav__link">
+      <a href="../../api/external/docs/" class="md-nav__link">
         
   
   
@@ -1647,7 +1775,7 @@
   
   
     <li class="md-nav__item">
-      <a href="api/external/cytoscape/" class="md-nav__link">
+      <a href="../../api/external/cytoscape/" class="md-nav__link">
         
   
   
@@ -1670,7 +1798,7 @@
   
   
     <li class="md-nav__item">
-      <a href="api/external/database/" class="md-nav__link">
+      <a href="../../api/external/database/" class="md-nav__link">
         
   
   
@@ -1693,7 +1821,7 @@
   
   
     <li class="md-nav__item">
-      <a href="api/external/filesystem/" class="md-nav__link">
+      <a href="../../api/external/filesystem/" class="md-nav__link">
         
   
   
@@ -1716,7 +1844,7 @@
   
   
     <li class="md-nav__item">
-      <a href="api/external/network/" class="md-nav__link">
+      <a href="../../api/external/network/" class="md-nav__link">
         
   
   
@@ -1799,7 +1927,7 @@
   
   
     <li class="md-nav__item">
-      <a href="development/installation/" class="md-nav__link">
+      <a href="../../development/installation/" class="md-nav__link">
         
   
   
@@ -1849,19 +1977,64 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#quick-start" class="md-nav__link">
+  <a href="#what-is-cnl" class="md-nav__link">
     <span class="md-ellipsis">
-      🚀 Quick Start
+      What is CNL?
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="🚀 Quick Start">
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#basic-syntax-elements" class="md-nav__link">
+    <span class="md-ellipsis">
+      Basic Syntax Elements
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Basic Syntax Elements">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#key-features" class="md-nav__link">
+  <a href="#relations" class="md-nav__link">
     <span class="md-ellipsis">
-      Key Features
+      Relations
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#attributes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Attributes
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#adverbs-advancedexpert-levels" class="md-nav__link">
+    <span class="md-ellipsis">
+      Adverbs (Advanced/Expert Levels)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#quantifiers-advancedexpert-levels" class="md-nav__link">
+    <span class="md-ellipsis">
+      Quantifiers (Advanced/Expert Levels)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#modality-expert-level-only" class="md-nav__link">
+    <span class="md-ellipsis">
+      Modality (Expert Level Only)
     </span>
   </a>
   
@@ -1873,37 +2046,37 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#documentation-sections" class="md-nav__link">
+  <a href="#complex-structures" class="md-nav__link">
     <span class="md-ellipsis">
-      📚 Documentation Sections
+      Complex Structures
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="📚 Documentation Sections">
+    <nav class="md-nav" aria-label="Complex Structures">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#nodebook-users" class="md-nav__link">
+  <a href="#multiple-relations" class="md-nav__link">
     <span class="md-ellipsis">
-      NodeBook Users
+      Multiple Relations
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#api-reference" class="md-nav__link">
+  <a href="#nested-structures" class="md-nav__link">
     <span class="md-ellipsis">
-      API Reference
+      Nested Structures
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#development" class="md-nav__link">
+  <a href="#conditional-statements" class="md-nav__link">
     <span class="md-ellipsis">
-      Development
+      Conditional Statements
     </span>
   </a>
   
@@ -1915,37 +2088,46 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#getting-started" class="md-nav__link">
+  <a href="#difficulty-level-examples" class="md-nav__link">
     <span class="md-ellipsis">
-      🔧 Getting Started
+      Difficulty Level Examples
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="🔧 Getting Started">
+    <nav class="md-nav" aria-label="Difficulty Level Examples">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#prerequisites" class="md-nav__link">
+  <a href="#easy-level" class="md-nav__link">
     <span class="md-ellipsis">
-      Prerequisites
+      Easy Level
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#installation" class="md-nav__link">
+  <a href="#moderate-level" class="md-nav__link">
     <span class="md-ellipsis">
-      Installation
+      Moderate Level
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#api-access" class="md-nav__link">
+  <a href="#advanced-level" class="md-nav__link">
     <span class="md-ellipsis">
-      API Access
+      Advanced Level
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#expert-level" class="md-nav__link">
+    <span class="md-ellipsis">
+      Expert Level
     </span>
   </a>
   
@@ -1957,37 +2139,46 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#architecture-overview" class="md-nav__link">
+  <a href="#best-practices" class="md-nav__link">
     <span class="md-ellipsis">
-      🏗️ Architecture Overview
+      Best Practices
     </span>
   </a>
   
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#api-examples" class="md-nav__link">
-    <span class="md-ellipsis">
-      📖 API Examples
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="📖 API Examples">
+    <nav class="md-nav" aria-label="Best Practices">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#creating-a-graph" class="md-nav__link">
+  <a href="#clarity" class="md-nav__link">
     <span class="md-ellipsis">
-      Creating a Graph
+      Clarity
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#parsing-cnl" class="md-nav__link">
+  <a href="#consistency" class="md-nav__link">
     <span class="md-ellipsis">
-      Parsing CNL
+      Consistency
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#completeness" class="md-nav__link">
+    <span class="md-ellipsis">
+      Completeness
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#accuracy" class="md-nav__link">
+    <span class="md-ellipsis">
+      Accuracy
     </span>
   </a>
   
@@ -1999,18 +2190,78 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#contributing" class="md-nav__link">
+  <a href="#common-patterns" class="md-nav__link">
     <span class="md-ellipsis">
-      🤝 Contributing
+      Common Patterns
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Common Patterns">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#part-whole-relationships" class="md-nav__link">
+    <span class="md-ellipsis">
+      Part-Whole Relationships
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cause-effect-relationships" class="md-nav__link">
+    <span class="md-ellipsis">
+      Cause-Effect Relationships
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#property-relationships" class="md-nav__link">
+    <span class="md-ellipsis">
+      Property Relationships
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#process-relationships" class="md-nav__link">
+    <span class="md-ellipsis">
+      Process Relationships
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tips-for-writing-cnl" class="md-nav__link">
+    <span class="md-ellipsis">
+      Tips for Writing CNL
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#license" class="md-nav__link">
+  <a href="#common-mistakes-to-avoid" class="md-nav__link">
     <span class="md-ellipsis">
-      📄 License
+      Common Mistakes to Avoid
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#getting-help-with-cnl" class="md-nav__link">
+    <span class="md-ellipsis">
+      Getting Help with CNL
     </span>
   </a>
   
@@ -2035,98 +2286,171 @@
   
 
 
-<h1 id="node-book-backend-documentation">Node Book Backend Documentation</h1>
-<p>Welcome to the comprehensive documentation for the Node Book backend API and implementation. </p>
-<p>The documentation is generated dynamically.  For direct access to the source code of the project, please visit <a href="https://github.com/gnowledge/nodeBook">https://github.com/gnowledge/nodeBook</a> </p>
-<h2 id="quick-start">🚀 Quick Start</h2>
-<p>Node Book is designed based on a model of knowledge,
-<strong>Node-neighborhood Description Framework (NDF)</strong> that provides a
-comprehensive model for creating and managing graph-based knowledge
-representation of things, concepts, events, processes and functions in
-terms of describing relations between them, and their properties
-(attributes).</p>
-<p>The audience of this documentation is developers and curious
-visitors. For end-user documentation, please see the <a href="users/">NodeBook Users</a> section.</p>
-<h3 id="key-features">Key Features</h3>
-<ul>
-<li><strong>Graph Management</strong>: Create, update, and manage complex graph structures</li>
-<li><strong>Node Operations</strong>: Handle polymorphic nodes with multiple morphs</li>
-<li><strong>Relation Management</strong>: Define and manage relationships between nodes</li>
-<li><strong>Authentication</strong>: Secure user management with JWT tokens</li>
-<li><strong>CNL Parsing</strong>: Natural language processing for graph descriptions</li>
-</ul>
-<h2 id="documentation-sections">📚 Documentation Sections</h2>
-<h3 id="nodebook-users">NodeBook Users</h3>
-<ul>
-<li><strong>Getting Started</strong>: Introduction to NodeBook for end users</li>
-<li><strong>Difficulty Levels</strong>: Understanding the progressive learning system</li>
-<li><strong>User Guide</strong>: Comprehensive guide to using NodeBook features</li>
-<li><strong>CNL Syntax</strong>: Understanding Controlled Natural Language</li>
-</ul>
-<h3 id="api-reference">API Reference</h3>
-<ul>
-<li><strong>Core Modules</strong>: Core functionality including models, utilities, and validation</li>
-<li><strong>Routes</strong>: API endpoints for graph operations, user management, and more</li>
-</ul>
-<h3 id="development">Development</h3>
-<ul>
-<li><strong>Installation</strong>: Setup instructions for developers</li>
-</ul>
-<h2 id="getting-started">🔧 Getting Started</h2>
-<h3 id="prerequisites">Prerequisites</h3>
-<ul>
-<li>Python 3.8+</li>
-<li>FastAPI</li>
-<li>SQLModel</li>
-<li>spaCy</li>
-</ul>
-<h3 id="installation">Installation</h3>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="c1"># Clone the repository</span>
-</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>git<span class="w"> </span>clone<span class="w"> </span>https://github.com/gnowledge/nodeBook.git
-</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="nb">cd</span><span class="w"> </span>nodeBook
-</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>
-</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="c1"># Install dependencies</span>
-</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>pip<span class="w"> </span>install<span class="w"> </span>-r<span class="w"> </span>backend/requirements.txt
-</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>
-</span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a><span class="c1"># Run the development server</span>
-</span><span id="__span-0-9"><a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a>bash<span class="w"> </span>scripts/start_backend.sh
+<h1 id="cnl-syntax-guide">CNL Syntax Guide</h1>
+<p>Controlled Natural Language (CNL) is the core syntax used in NodeBook to express knowledge in a structured yet readable way. This guide explains the syntax rules and provides examples for different difficulty levels.</p>
+<h2 id="what-is-cnl">What is CNL?</h2>
+<p>CNL is a simplified, structured form of natural language that allows you to express complex relationships in a way that's both human-readable and machine-processable. It combines the clarity of natural language with the precision of formal logic.</p>
+<h2 id="basic-syntax-elements">Basic Syntax Elements</h2>
+<h3 id="relations">Relations</h3>
+<p>Relations connect nodes to show how they relate to each other.</p>
+<p><strong>Syntax</strong>: <code>&lt;relation_name&gt; target_node</code></p>
+<p><strong>Examples</strong>:
+<div class="language-text highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>&lt;is part of&gt; heart
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>&lt;causes&gt; disease
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>&lt;has property&gt; color
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>&lt;contains&gt; oxygen
+</span></code></pre></div></p>
+<h3 id="attributes">Attributes</h3>
+<p>Attributes describe properties of nodes.</p>
+<p><strong>Syntax</strong>: <code>has attribute_name: value</code></p>
+<p><strong>Examples</strong>:
+<div class="language-text highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>has color: red
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>has temperature: 37 degrees Celsius
+</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>has size: large
+</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a>has weight: 300 grams
+</span></code></pre></div></p>
+<h3 id="adverbs-advancedexpert-levels">Adverbs (Advanced/Expert Levels)</h3>
+<p>Adverbs modify relations to add detail about how, when, or to what extent something happens.</p>
+<p><strong>Syntax</strong>: <code>++adverb++ &lt;relation&gt; target</code></p>
+<p><strong>Examples</strong>:
+<div class="language-text highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>++quickly++ &lt;moves&gt; blood
+</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>++slowly++ &lt;pumps&gt; heart
+</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>++efficiently++ &lt;transports&gt; oxygen
+</span></code></pre></div></p>
+<h3 id="quantifiers-advancedexpert-levels">Quantifiers (Advanced/Expert Levels)</h3>
+<p>Quantifiers specify the amount or scope of a relation.</p>
+<p><strong>Syntax</strong>: <code>quantifier &lt;relation&gt; target</code></p>
+<p><strong>Common quantifiers</strong>: <code>all</code>, <code>some</code>, <code>many</code>, <code>few</code>, <code>most</code>, <code>none</code></p>
+<p><strong>Examples</strong>:
+<div class="language-text highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>all &lt;contains&gt; oxygen
+</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>some &lt;cause&gt; disease
+</span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a>many &lt;transport&gt; nutrients
+</span></code></pre></div></p>
+<h3 id="modality-expert-level-only">Modality (Expert Level Only)</h3>
+<p>Modality expresses uncertainty, possibility, or necessity.</p>
+<p><strong>Syntax</strong>: <code>[modality] &lt;relation&gt; target</code> or <code>has attribute: value [modality]</code></p>
+<p><strong>Common modalities</strong>: <code>[possible]</code>, <code>[necessary]</code>, <code>[likely]</code>, <code>[certain]</code>, <code>[uncertain]</code></p>
+<p><strong>Examples</strong>:
+<div class="language-text highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>[possible] &lt;causes&gt; disease
+</span><span id="__span-4-2"><a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a>has temperature: 37 degrees [likely]
+</span><span id="__span-4-3"><a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a>[necessary] &lt;contains&gt; oxygen
+</span></code></pre></div></p>
+<h2 id="complex-structures">Complex Structures</h2>
+<h3 id="multiple-relations">Multiple Relations</h3>
+<p>You can express multiple relations for the same node:</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>heart &lt;pumps&gt; blood
+</span><span id="__span-5-2"><a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a>heart &lt;is part of&gt; circulatory system
+</span><span id="__span-5-3"><a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a>heart &lt;has property&gt; muscle tissue
 </span></code></pre></div>
-<h3 id="api-access">API Access</h3>
-<p>Once running, you can access:
-- <strong>API Documentation</strong>: <a href="http://localhost:8000/docs">http://localhost:8000/docs</a>
-- <strong>Alternative Docs</strong>: <a href="http://localhost:8000/redoc">http://localhost:8000/redoc</a>
-- <strong>Health Check</strong>: <a href="http://localhost:8000/api/health">http://localhost:8000/api/health</a></p>
-<h2 id="architecture-overview">🏗️ Architecture Overview</h2>
-<p>NDF Studio backend is built with:
-- <strong>FastAPI</strong>: Modern, fast web framework
-- <strong>SQLModel</strong>: SQL databases in Python, designed for compatibility with both SQLAlchemy Core and Pydantic
-- <strong>Pydantic</strong>: Data validation using Python type annotations
-- <strong>JWT</strong>: Secure authentication with inactivity-based token expiration</p>
-<h2 id="api-examples">📖 API Examples</h2>
-<h3 id="creating-a-graph">Creating a Graph</h3>
-<div class="language-python highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="kn">import</span><span class="w"> </span><span class="nn">requests</span>
-</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>
-</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="c1"># Create a new graph</span>
-</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a><span class="n">response</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">post</span><span class="p">(</span>
-</span><span id="__span-1-5"><a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a>    <span class="s2">&quot;http://localhost:8000/api/ndf/users/</span><span class="si">{user_id}</span><span class="s2">/graphs/</span><span class="si">{graph_id}</span><span class="s2">&quot;</span><span class="p">,</span>
-</span><span id="__span-1-6"><a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a>    <span class="n">json</span><span class="o">=</span><span class="p">{</span>
-</span><span id="__span-1-7"><a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a>        <span class="s2">&quot;title&quot;</span><span class="p">:</span> <span class="s2">&quot;My Knowledge Graph&quot;</span><span class="p">,</span>
-</span><span id="__span-1-8"><a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a>        <span class="s2">&quot;description&quot;</span><span class="p">:</span> <span class="s2">&quot;A graph representing domain knowledge&quot;</span>
-</span><span id="__span-1-9"><a id="__codelineno-1-9" name="__codelineno-1-9" href="#__codelineno-1-9"></a>    <span class="p">}</span>
-</span><span id="__span-1-10"><a id="__codelineno-1-10" name="__codelineno-1-10" href="#__codelineno-1-10"></a><span class="p">)</span>
+<h3 id="nested-structures">Nested Structures</h3>
+<p>For complex relationships, you can nest structures:</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>heart &lt;contains&gt; chambers
+</span><span id="__span-6-2"><a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a>chambers &lt;include&gt; left atrium
+</span><span id="__span-6-3"><a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a>left atrium &lt;receives&gt; oxygenated blood
 </span></code></pre></div>
-<h3 id="parsing-cnl">Parsing CNL</h3>
-<div class="language-python highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="c1"># Parse CNL (Controlled Natural Language) into graph structure</span>
-</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s2">&quot;graph.cnl&quot;</span><span class="p">,</span> <span class="s2">&quot;rb&quot;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
-</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>    <span class="n">response</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">post</span><span class="p">(</span>
-</span><span id="__span-2-4"><a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a>        <span class="s2">&quot;http://localhost:8000/api/ndf/users/</span><span class="si">{user_id}</span><span class="s2">/graphs/</span><span class="si">{graph_id}</span><span class="s2">/parse_pipeline&quot;</span><span class="p">,</span>
-</span><span id="__span-2-5"><a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a>        <span class="n">files</span><span class="o">=</span><span class="p">{</span><span class="s2">&quot;file&quot;</span><span class="p">:</span> <span class="n">f</span><span class="p">}</span>
-</span><span id="__span-2-6"><a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a>    <span class="p">)</span>
+<h3 id="conditional-statements">Conditional Statements</h3>
+<p>Express conditional relationships:</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-7-1"><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a>if heart &lt;stops&gt; then body &lt;dies&gt;
+</span><span id="__span-7-2"><a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a>if temperature &lt;rises&gt; then metabolism &lt;increases&gt;
 </span></code></pre></div>
-<h2 id="contributing">🤝 Contributing</h2>
-<p>We welcome contributions! Please see our <a href="development/installation/">Installation Guide</a> for setup instructions.</p>
-<h2 id="license">📄 License</h2>
-<p>This project is licensed under  Affero GPL 3.0 <a href="https://github.com/gnowledge/nodeBook/blob/main/LICENSE">LICENSE</a> file for details.</p>
+<h2 id="difficulty-level-examples">Difficulty Level Examples</h2>
+<h3 id="easy-level">Easy Level</h3>
+<p>At the easy level, focus on basic relations and attributes:</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-8-1"><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a>heart &lt;pumps&gt; blood
+</span><span id="__span-8-2"><a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a>heart has color: red
+</span><span id="__span-8-3"><a id="__codelineno-8-3" name="__codelineno-8-3" href="#__codelineno-8-3"></a>blood &lt;flows&gt; through vessels
+</span><span id="__span-8-4"><a id="__codelineno-8-4" name="__codelineno-8-4" href="#__codelineno-8-4"></a>vessels &lt;carry&gt; oxygen
+</span></code></pre></div>
+<h3 id="moderate-level">Moderate Level</h3>
+<p>Add adjectives (qualifiers) to provide more detail:</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-9-1"><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a>red heart &lt;pumps&gt; oxygenated blood
+</span><span id="__span-9-2"><a id="__codelineno-9-2" name="__codelineno-9-2" href="#__codelineno-9-2"></a>large vessels &lt;carry&gt; nutrients
+</span><span id="__span-9-3"><a id="__codelineno-9-3" name="__codelineno-9-3" href="#__codelineno-9-3"></a>small capillaries &lt;exchange&gt; gases
+</span></code></pre></div>
+<h3 id="advanced-level">Advanced Level</h3>
+<p>Include adverbs and quantifiers for precision:</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-10-1"><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a>heart ++efficiently++ &lt;pumps&gt; blood
+</span><span id="__span-10-2"><a id="__codelineno-10-2" name="__codelineno-10-2" href="#__codelineno-10-2"></a>all vessels &lt;carry&gt; oxygen
+</span><span id="__span-10-3"><a id="__codelineno-10-3" name="__codelineno-10-3" href="#__codelineno-10-3"></a>some blood ++quickly++ &lt;flows&gt; through arteries
+</span></code></pre></div>
+<h3 id="expert-level">Expert Level</h3>
+<p>Use all features including modality for sophisticated expressions:</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-11-1"><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a>heart [likely] ++efficiently++ &lt;pumps&gt; blood
+</span><span id="__span-11-2"><a id="__codelineno-11-2" name="__codelineno-11-2" href="#__codelineno-11-2"></a>all vessels [necessary] &lt;carry&gt; oxygen
+</span><span id="__span-11-3"><a id="__codelineno-11-3" name="__codelineno-11-3" href="#__codelineno-11-3"></a>some blood [possible] ++quickly++ &lt;flows&gt; through arteries
+</span><span id="__span-11-4"><a id="__codelineno-11-4" name="__codelineno-11-4" href="#__codelineno-11-4"></a>heart has temperature: 37 degrees [likely]
+</span></code></pre></div>
+<h2 id="best-practices">Best Practices</h2>
+<h3 id="clarity">Clarity</h3>
+<ul>
+<li>Use clear, descriptive relation names</li>
+<li>Be specific about what you're describing</li>
+<li>Avoid ambiguous terms</li>
+</ul>
+<h3 id="consistency">Consistency</h3>
+<ul>
+<li>Use consistent naming conventions</li>
+<li>Apply similar patterns across related concepts</li>
+<li>Maintain logical relationships</li>
+</ul>
+<h3 id="completeness">Completeness</h3>
+<ul>
+<li>Include all relevant attributes</li>
+<li>Specify relationships clearly</li>
+<li>Add context where helpful</li>
+</ul>
+<h3 id="accuracy">Accuracy</h3>
+<ul>
+<li>Verify your knowledge before expressing it</li>
+<li>Use appropriate quantifiers and modalities</li>
+<li>Check that relationships make logical sense</li>
+</ul>
+<h2 id="common-patterns">Common Patterns</h2>
+<h3 id="part-whole-relationships">Part-Whole Relationships</h3>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-12-1"><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a>&lt;is part of&gt; whole
+</span><span id="__span-12-2"><a id="__codelineno-12-2" name="__codelineno-12-2" href="#__codelineno-12-2"></a>&lt;contains&gt; part
+</span><span id="__span-12-3"><a id="__codelineno-12-3" name="__codelineno-12-3" href="#__codelineno-12-3"></a>&lt;includes&gt; component
+</span></code></pre></div>
+<h3 id="cause-effect-relationships">Cause-Effect Relationships</h3>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-13-1"><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a>&lt;causes&gt; effect
+</span><span id="__span-13-2"><a id="__codelineno-13-2" name="__codelineno-13-2" href="#__codelineno-13-2"></a>&lt;leads to&gt; result
+</span><span id="__span-13-3"><a id="__codelineno-13-3" name="__codelineno-13-3" href="#__codelineno-13-3"></a>&lt;triggers&gt; response
+</span></code></pre></div>
+<h3 id="property-relationships">Property Relationships</h3>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-14-1"><a id="__codelineno-14-1" name="__codelineno-14-1" href="#__codelineno-14-1"></a>&lt;has property&gt; characteristic
+</span><span id="__span-14-2"><a id="__codelineno-14-2" name="__codelineno-14-2" href="#__codelineno-14-2"></a>&lt;possesses&gt; attribute
+</span><span id="__span-14-3"><a id="__codelineno-14-3" name="__codelineno-14-3" href="#__codelineno-14-3"></a>&lt;exhibits&gt; behavior
+</span></code></pre></div>
+<h3 id="process-relationships">Process Relationships</h3>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-15-1"><a id="__codelineno-15-1" name="__codelineno-15-1" href="#__codelineno-15-1"></a>&lt;performs&gt; action
+</span><span id="__span-15-2"><a id="__codelineno-15-2" name="__codelineno-15-2" href="#__codelineno-15-2"></a>&lt;executes&gt; function
+</span><span id="__span-15-3"><a id="__codelineno-15-3" name="__codelineno-15-3" href="#__codelineno-15-3"></a>&lt;carries out&gt; operation
+</span></code></pre></div>
+<h2 id="tips-for-writing-cnl">Tips for Writing CNL</h2>
+<ol>
+<li><strong>Start Simple</strong>: Begin with basic relations and add complexity gradually</li>
+<li><strong>Be Specific</strong>: Use precise terms rather than vague ones</li>
+<li><strong>Check Logic</strong>: Ensure your relationships make logical sense</li>
+<li><strong>Use Examples</strong>: Look at existing CNL in your graph for patterns</li>
+<li><strong>Test Understanding</strong>: Try reading your CNL aloud to see if it makes sense</li>
+</ol>
+<h2 id="common-mistakes-to-avoid">Common Mistakes to Avoid</h2>
+<ul>
+<li><strong>Inconsistent naming</strong>: Use the same terms for the same concepts</li>
+<li><strong>Missing context</strong>: Include enough detail to be clear</li>
+<li><strong>Over-complication</strong>: Don't add unnecessary complexity</li>
+<li><strong>Logical errors</strong>: Ensure relationships are logically sound</li>
+<li><strong>Ambiguous references</strong>: Be clear about what you're referring to</li>
+</ul>
+<h2 id="getting-help-with-cnl">Getting Help with CNL</h2>
+<ul>
+<li><strong>Use the parse button</strong> (when available) to validate your syntax</li>
+<li><strong>Check the CNL view</strong> to see how your knowledge is structured</li>
+<li><strong>Look at examples</strong> in existing graphs</li>
+<li><strong>Start with simple patterns</strong> and build up complexity</li>
+<li><strong>Ask for help</strong> if you're unsure about syntax</li>
+</ul>
+<p>Remember: CNL is designed to be readable and logical. If your CNL doesn't make sense when you read it, it probably needs to be revised! </p>
 
 
 
@@ -2185,12 +2509,12 @@ visitors. For end-user documentation, please see the <a href="users/">NodeBook U
     
     
       
-      <script id="__config" type="application/json">{"base": ".", "features": ["navigation.tabs", "navigation.sections", "navigation.expand", "navigation.top", "search.suggest", "search.highlight", "content.code.copy", "content.code.annotate"], "search": "assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs", "navigation.sections", "navigation.expand", "navigation.top", "search.suggest", "search.highlight", "content.code.copy", "content.code.annotate"], "search": "../../assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-      <script src="assets/javascripts/bundle.13a4f30d.min.js"></script>
+      <script src="../../assets/javascripts/bundle.13a4f30d.min.js"></script>
       
-        <script src="javascripts/mathjax.js"></script>
+        <script src="../../javascripts/mathjax.js"></script>
       
         <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
       
